@@ -1,66 +1,57 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+`# Laravel Jetstream Livewire Social Login Integration
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This guide will walk you through the steps to integrate GitHub and Google social logins into your Laravel Jetstream Livewire application. We will be using Laravel Socialite package for this purpose.
 
-## About Laravel
+## Prerequisites
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Before proceeding with the integration, please ensure that you have the following prerequisites installed:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- PHP (>= 7.3)
+- Composer
+- Laravel (>= 8.x)
+- Laravel Jetstream (>= 2.x)
+- Laravel Livewire (>= 2.x)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Step 1: Install Laravel Socialite
 
-## Learning Laravel
+First, let's install the Laravel Socialite package using Composer. Open your terminal and navigate to your Laravel project directory. Run the following command:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```shell
+composer require laravel/socialite
+```
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Step 2: Configure GitHub Social Login
+-------------------------------------
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1.  Follow the guide available at [Laravel 9 Socialite Login with GitHub](https://www.itsolutionstuff.com/post/laravel-9-socialite-login-with-github-account-exampleexample.html) to set up GitHub social login.
+2.  The guide will provide step-by-step instructions to install the required dependencies, configure routes, views, and handle the authentication process.
+3.  Make sure to follow all the instructions and update the necessary files as mentioned in the guide.
 
-## Laravel Sponsors
+Step 3: Configure Google Social Login
+-------------------------------------
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+1.  Refer to the guide provided by [PositronX](https://www.positronx.io/laravel-9-socialite-login-with-google-example-tutorial/) to integrate Google social login into your Laravel application.
+2.  This guide will walk you through the process of installing the required dependencies, setting up Google OAuth credentials, and updating the relevant files for authentication.
+3.  Follow the guide carefully and make the necessary changes in your application as instructed.
 
-### Premium Partners
+Step 4: Test the Social Logins
+------------------------------
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+After completing the configuration steps, you can now test the GitHub and Google social logins in your Laravel Jetstream Livewire application.
 
-## Contributing
+-   Start your Laravel development server using the `php artisan serve` command.
+-   Visit your application in the browser and navigate to the login page.
+-   You should see options to log in with GitHub and Google.
+-   Click on the respective social login button, and you will be redirected to the corresponding social provider's login page.
+-   After successfully logging in, you will be redirected back to your application and logged in with the social provider's credentials.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Congratulations! You have successfully integrated both GitHub and Google social logins into your Laravel Jetstream Livewire application using Laravel Socialite.
 
-## Code of Conduct
+Feel free to explore and customize the login functionality according to your application's requirements.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Additional Resources
+--------------------
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+-   Laravel Socialite documentation: [Laravel Socialite](https://laravel.com/docs/socialite)
+-   Laravel Jetstream documentation: [Laravel Jetstream](https://jetstream.laravel.com)
+-   Laravel Livewire documentation: [Laravel Livewire](https://laravel-livewire.com)

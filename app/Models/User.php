@@ -24,7 +24,8 @@ class User extends Authenticatable
         'email',
         'password',
         'gauth_id',
-        'gauth_type'
+        'gauth_type',
+        'github_id',
     ];
     /**
      * The attributes that should be hidden for arrays.
